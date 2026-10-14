@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+  <title>CADASTRO TAREFA MILENA F BATISTEL</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Outfit:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="layout">
+   <main class="main">
+    <div class="topbar">
+     <button aria-label="Alternar tema" class="botao-icone" id="botao-alternar-tema" title="Alternar tema">
+      <i class="fa-solid fa-moon">
+      </i>
+     </button>
+    </div>
+    <div class="content">
+     <img src="menina-premio-850x560.jpeg" alt="Foto de Milena na feira de ciências" class="foto-inicio"/>
+     <h1 style="font-size:clamp(1.25rem,3vw,2rem);font-weight:800;margin:0 0 24px;">CADASTRO TAREFA MILENA F BATISTEL</h1>
+     <div class="stats">
+      <div class="stat">
+       <div class="stat-head">
+        <span>
+         Total de tarefas
+        </span>
+        <div class="stat-icon purple">
+         <i class="fa-solid fa-list-check">
+         </i>
+        </div>
+       </div>
+       <strong id="total-resumo">
+        0
+       </strong>
+       <small>
+        Tarefas cadastradas
+       </small>
+      </div>
+      <div class="stat">
+       <div class="stat-head">
+        <span>
+         Em andamento
+        </span>
+        <div class="stat-icon amber">
+         <i class="fa-regular fa-clock">
+         </i>
+        </div>
+       </div>
+       <strong id="pendentes-resumo">
+        0
+       </strong>
+       <small>
+        Aguardando conclusão
+       </small>
+      </div>
+      <div class="stat">
+       <div class="stat-head">
+        <span>
+         Concluídas
+        </span>
+        <div class="stat-icon green">
+         <i class="fa-solid fa-circle-check">
+         </i>
+        </div>
+       </div>
+       <strong id="concluidas-resumo">
+        0
+       </strong>
+       <small>
+        Você está progredindo!
+       </small>
+      </div>
+     </div>
+     <section class="panel">
+      <div class="section-header">
+       <div>
+       </div>
+       <div class="task-counter" id="contador-tarefas">
+        0 tarefas na lista
+       </div>
+      </div>
+      <div class="add-area">
+       <label for="campo-tarefa">
+        NOVA TAREFA
+       </label>
+       <div class="caixa-entrada">
+        <div class="input-wrap">
+         <i class="fa-solid fa-pen-to-square">
+         </i>
+         <input id="campo-tarefa" maxlength="40" placeholder="O que você precisa fazer hoje?" type="text"/>
+        </div>
+        <button class="botao-principal" id="botao-adicionar">
+         <i class="fa-solid fa-plus">
+         </i>
+         Adicionar tarefa
+        </button>
+       </div>
+      </div>
+      <div class="tools">
+       <div class="filters">
+        <button class="filtro ativo" id="filtro-todas">
+         Todas
+        </button>
+        <button class="filtro" id="filtro-pendentes">
+         Pendentes
+        </button>
+        <button class="filtro" id="filtro-concluidas">
+         Concluídas
+        </button>
+       </div>
+       <div class="tool-right">
+        <div class="search-wrap">
+         <i class="fa-solid fa-magnifying-glass">
+         </i>
+         <input aria-label="Buscar tarefa" id="campo-pesquisa" placeholder="Buscar tarefa..." type="text"/>
+        </div>
+        <button id="limpar-concluidas" title="Remover todas as tarefas concluídas">
+         <i class="fa-solid fa-broom">
+         </i>
+         <span>
+          Limpar concluídas
+         </span>
+        </button>
+       </div>
+      </div>
+      <div class="list-area">
+       <ul class="lista-tarefas" id="lista-tarefas">
+       </ul>
+       <div class="empty-hint">
+        <div class="empty-illustration">
+         <i class="fa-solid fa-clipboard-check">
+         </i>
+        </div>
+        <strong>
+         Suas tarefas aparecem aqui
+        </strong>
+        <p>
+         Adicione uma tarefa acima para começar a organizar seu dia.
+        </p>
+       </div>
+      </div>
+     </section>
+    </div>
+   </main>
+  </div>
+  <script src="script.js">
+  </script>
+ </body>
+</html>
